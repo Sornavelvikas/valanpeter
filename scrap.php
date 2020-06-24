@@ -5,7 +5,7 @@ $dom = file_get_html("http://senthuherbals.blogspot.com/?m=1", false);
 $answer = array();
 $i =0;
 if(!empty($dom)) {
-    foreach($dom->find("li.item") as $divClass) {
+    foreach($dom->find(".item") as $divClass) {
         //title
         print_r('checkli');
         foreach($divClass->find(".article-header .title.entry-title") as $title ) {
